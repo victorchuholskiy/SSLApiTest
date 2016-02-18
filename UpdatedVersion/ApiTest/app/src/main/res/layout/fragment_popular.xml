@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvPopular"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="POPULAR"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_below="@id/tvPopular"
+        android:text="Get Popular"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnGetPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/btnGetPopular"
+        android:id="@+id/recyclerPopular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnWatchFavourite"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch Favourite"/>
+
+
+</RelativeLayout>
